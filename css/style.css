@@ -1,0 +1,90 @@
+
+
+/* ===== Primary Styles ========================================================
+   Author: Michael Svendsen
+   ========================================================================== */
+
+
+body, html {
+ background: #CCC;
+ font-family: 'Inika', serif;
+}
+
+.container{
+ width: 960px;
+ margin: 40px auto;
+ background: #666;
+ padding: 15px;
+ -webkit-border-radius: 10px;
+ -webkit-border-top-right-radius: 15px;
+ -moz-border-radius: 10px;
+ -moz-border-radius-topright: 15px;
+ border-radius: 10px;
+ border-top-right-radius: 15px;
+ font-family: 'Inika', serif !important;
+}
+
+#upload-section{
+ background: #FFF;
+ padding: 15px;
+ -webkit-border-radius: 10px;
+ -webkit-border-top-right-radius: 15px;
+ -moz-border-radius: 10px;
+ -moz-border-radius-topright: 15px;
+ border-radius: 10px;
+ border-top-right-radius: 15px;
+ font-family: 'Inika', serif;
+}
+
+.main-submit-area{
+  display: none;
+}
+
+#upload-progress p{
+  display: none;
+}
+
+#upload-progress .label{
+  display: none;
+}
+
+#upload-progress .progress{
+  display: none;
+}
+
+#parsing-progress p{
+  display: none;
+}
+
+#parsing-progress .label{
+  display: none;
+}
+
+#parsing-progress .progress{
+  display: none;
+}
+
+#link-display{
+  display: none;
+  background: #CCC;
+   padding: 15px;
+   -webkit-border-radius: 10px;
+   -webkit-border-top-right-radius: 15px;
+   -moz-border-radius: 10px;
+   -moz-border-radius-topright: 15px;
+   border-radius: 10px;
+   border-top-right-radius: 15px;
+   font-family: 'Inika', serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+

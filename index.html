@@ -1,0 +1,81 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title></title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <link href='http://fonts.googleapis.com/css?family=Inika:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="css/uniform.default.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/libs/modernizr-2.5-respond-1.1.0.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+      <h1>NikGif</h1>
+      
+      <hr/>
+      
+      <h3>Upload a .gif file</h3>
+      
+      <div id="upload-section">
+        <p>
+          Please select a .gif file from your hard drive and upload it.
+        </p>
+
+        <form class='main-form' action="fileupload.php" method="POST" enctype="multipart/form-data">
+          <p>
+            <input type="file" name="gif_file" value="" id="gif_file">
+          </p>
+          <div id="upload-progress">
+            <p>Uploading File</p>
+            <span class="label label-success">Upload Complete</span>
+            <span class="label label-important">Upload Failure</span>
+            <div class="progress progress-info progress-striped active">
+
+              <div class="bar" style="width: 100%">
+
+              </div>
+            </div>
+          </div>
+          <div id="parsing-progress">
+            <p>Deconstructing File:</p>
+            <span class="label label-success">Deconstruct Complete</span>
+            <div class="progress progress-danger progress-striped active">
+
+              <div class="bar" style="width: 100%">
+
+              </div>
+            </div>
+          </div>
+          <p class="main-submit-area"><input class="main-btn" type="submit" value="LETS DO THIS &rarr;"></p>
+        </form>
+        <div id="link-display">
+          
+        </div>
+      </div>
+      
+    </div> <!-- /container -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+<script src="js/libs/bootstrap/transition.js"></script>
+<script src="js/libs/bootstrap/collapse.js"></script>
+<script src="js/jquery.uniform.min.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
