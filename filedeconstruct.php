@@ -15,11 +15,13 @@ if(isset($_REQUEST['filename'])){
     
   } else {
     //the file does not exist
+    echo('{"status": "bad", "msg": "The File does not exist"}');
   }
   
   
 } else {
   //there is no file to deconstruct
+  echo('{"status": "bad", "msg": "You did not tell me what file to deconstruct"}');
 }
 
 function remove_extension($filename){
