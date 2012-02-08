@@ -84,7 +84,7 @@ function onFileDeconstructFinish(data){
   
   $("#parsing-progress p").hide("fast");
   $("#parsing-progress .progress").hide("fast");
-  $("#parsing-progress .label").show("fast");
+  $("#parsing-progress .label-success").show("fast");
   
   var stringToAppend = "<a href='"+data+"'>CLICK HERE TO DOWNLOAD YOUR AWESOME FILES!!!</a>"
   $("#link-display").html(stringToAppend);
@@ -93,7 +93,9 @@ function onFileDeconstructFinish(data){
 }
 
 function onFileDeconstructFail(data){
-  alert('error');
+  $("#parsing-progress p").hide("fast");
+  $("#parsing-progress .progress").hide("fast");
+  $("#parsing-progress .label-important").show("fast");
 }
 
 
