@@ -9,7 +9,7 @@ if(isset($_FILES['gif_file'])){
   $file_type = pathinfo($file_name, PATHINFO_EXTENSION);
   
   date_default_timezone_set("America/Toronto");
-	$todays_date = date("Ymds");
+	$todays_date = date("YmdHis");
 	
 	$final_file_name = remove_extension($file_name) . "-" . $todays_date . "." . $file_type;
   
