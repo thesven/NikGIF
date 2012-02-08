@@ -13,12 +13,14 @@ $(function() {
     $("#upload-progress .label").hide("fast");
     $("#parsing-progress .label").hide("fast");
     $("#link-display").hide("fast");
+    $('.wrong-file').hide('fast');
     
     if(type == 'image/gif'){
       //show the upload button
       $('.main-submit-area').show("fast");
     } else {
       //hide the upload button
+      $('.wrong-file').show('fast');
       $('.main-submit-area').hide("fast");
     }
     
@@ -58,6 +60,7 @@ function onPreUpload(){
   $("#upload-progress .progress").show("fast");
   $("#upload-progress .label").hide("fast");
   $("#parsing-progress .label").hide("fast");
+  $('.wrong-file').hide('fast');
   
 }
 
